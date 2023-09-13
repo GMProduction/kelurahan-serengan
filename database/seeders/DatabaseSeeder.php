@@ -21,6 +21,11 @@ class DatabaseSeeder extends Seeder
             'username' => 'pimpinan',
             'password' => Hash::make('pimpinan'),
             'role' => 'pimpinan',
+
+        ]);
+
+        User::create([
+
             'nama' => 'Admin',
             'username' => 'admin',
             'password' => Hash::make('admin'),

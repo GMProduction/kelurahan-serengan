@@ -65,7 +65,7 @@
                 <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ">
                     <ul class="py-1 text-sm text-gray-700 " aria-labelledby="dropdownDefault">
 
-                        <a class="block py-2 px-4 text-xs   ">Hi, Admin</a>
+                        <a class="block py-2 px-4 text-xs   ">Hi, User</a>
                         <div class="divide-y-2"></div>
                         <li>
                             <a class="block py-2 px-4 hover:bg-gray-100  text-red-600 cursor-pointer"
@@ -152,7 +152,7 @@
     @yield('morejs')
 
     <script>
-        jQuery.fn.dataTableExt.oApi.fnPagingInfo = function (oSettings) {
+        jQuery.fn.dataTableExt.oApi.fnPagingInfo = function(oSettings) {
             return {
                 "iStart": oSettings._iDisplayStart,
                 "iEnd": oSettings.fnDisplayEnd(),
