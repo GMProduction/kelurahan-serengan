@@ -16,9 +16,9 @@ class CreatePengajuansTable extends Migration
         Schema::create('pengajuans', function (Blueprint $table) {
             $table->id();
             $table->string('no_surat')->nullable(true)->default(null);
-            $table->bigInteger('jenis_surat_id')->unsigned()->unique();
+            $table->bigInteger('jenis_surat_id')->unsigned();
             $table->foreign('jenis_surat_id')->references('id')->on('jenis_surats');
-            $table->bigInteger('user_id')->unsigned()->unique();
+            $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->date('tanggal_awal')->nullable(true)->default(null);
             $table->date('tanggal_akhir')->nullable(true)->default(null);
